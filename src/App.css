@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+New&display=swap");
+.app {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--clr-txt);
+  background-color: var(--clr-bg);
+  font-weight: normal;
+}
+
+.light {
+  --clr-bg: #E7E8D1;
+  --clr-txt: #3A6B35;
+  --clr-primary: #A47551;
+  --clr-border: #E7E8D1;
+  --clr-nav: #E3B448;
+  --shadow: rgb(100, 100, 111) 0px 7px 29px 0px;
+}
+
+.dark {
+  --clr-bg: #1c3012;
+  --clr-txt: #E7E8D1;
+  --clr-primary: #E3B448;
+  --clr-border: #E7E8D1;
+  --clr-nav: #202523;
+  --shadow: rgba(0, 0, 0, 0.558) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+main {
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3A6B35;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fefefe;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E3B448;
+  border-radius: 12px;
+}

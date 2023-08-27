@@ -1,0 +1,118 @@
+.about-section {
+  position: relative !important;
+  padding-top: 100px !important;
+  padding-bottom: 30px !important;
+  background-color: var(--clr-bg) !important;
+
+}
+
+.tech-icons {
+  font-size: 4.5em !important;
+  margin: 15px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  color: var(--clr-primary);
+  vertical-align: middle !important;
+  text-align: center !important;
+  background: transparent !important;
+  box-shadow: var(--shadow) !important;
+  border-radius: 5px !important;
+  display: table !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
+.quote-card-view {
+  background: transparent !important;
+  border: none !important;
+  color: var(--clr-txt) !important;
+  box-shadow: var(--shadow);
+  font-size:large !important;
+}
+.gitContainer {
+  padding: 15px;
+  background: transparent !important;
+  box-shadow: var(--shadow);
+  font-size: 30px !important;
+  color: var(--clr-txt);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .tech-icons {
+    margin: 10px !important;
+  }
+}
+
+.tech-icons:hover {
+  transform: scale(1.08) !important;
+  overflow: hidden !important;
+}
+.tech-icon-images {
+  padding: 20px !important;
+  line-height: 1.6 !important;
+}
+.primary-header {
+  color: var(--clr-primary) !important;
+}
+.about-activity {
+  list-style: none !important;
+  text-align: left !important;
+  padding-left: 1px !important;
+}
+
+@media (max-width: 767px) {
+  .about-img {
+    padding-top: 0 !important;
+  }
+}
+.git {
+  color: var(--clr-primary);
+}
+
+/* Services.css */
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  background-color: var(--clr-bg);
+}
+
+.service-block {
+  flex: 0 1 calc(30% - 20px); /* Taking width as 30% of the parent and subtracting 20px to account for margins */
+  padding: 20px;
+  margin: 10px;
+  background: transparent;
+  text-align: center;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-txt);
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.service-block:hover {
+  transform: scale(1.05);
+}
+
+.service-title {
+  font-size: 24px;
+  color: var(--clr-primary);
+  margin-bottom: 15px;
+}
+
+.service-icon {
+  font-size: 50px; /* Adjust as needed */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .services-section {
+    flex-direction: column;
+  }
+  
+  .service-block {
+    flex: 0 1 90%; /* Making block occupy 90% of the parent width on small screens */
+    margin: 10px auto; /* Centering the block */
+  }
+}
