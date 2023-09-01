@@ -1,6 +1,7 @@
 import React from "react";
 import axios from 'axios';
 import './askai.css';
+import { Container, Row, Col } from "react-bootstrap";
 
 class AskAI extends React.Component {
     constructor(props){
@@ -58,31 +59,46 @@ class AskAI extends React.Component {
     }
 
     render() {
-        return <>
-            <h3>Ask Anything to Yumo</h3>
-            <form>
-                <input 
-                type="text"  
-                value={this.state.prompt}
-                onChange={(e) => this.setState({prompt: e.target.value})} 
-                placeholder="Enter your prompt" required />
-                <input type="submit" onClick={this.fetchChatResponse} />
-            </form>
-
-            <ul className="convo">
-                {Array.isArray(this.state.context.context) ? this.state.context.context.map((cntx, idx) => {
-                    const role = cntx['role'];
-                    const dialogue = cntx['content'];
-
-                    if(role==='user')
-                        return <li className="dialogues" key={idx}>User: {dialogue} <br /></li>
-                    else if(role==='assistant')
-                        return <li className="dialogues" key={idx}>Yumo: {dialogue} <br /></li>
-                    return<></>;
-                }) : <></>}
-            </ul>
-        </>
+        return (
+            <Container className="chat-container">
+                <h3 className="chat-title">Ask Anything about Yumo</h3>
+                <ul className="chat-messages">
+                    {Array.isArray(this.state.context.context) ? this.state.context.context.map((cntx, idx) => {
+                        const role = cntx['role'];
+                        const dialogue = cntx['content'];
+    
+                        if (role === 'user')
+                            return <li className="user-message" key={idx}>{dialogue}</li>
+                        else if (role === 'assistant')
+                            return (
+                                <li className="ai-message" key={idx}>
+                                    <input 
+                                        type="text" 
+                                        value={`Yumo: ${dialogue}`} 
+                                        readOnly 
+                                    />
+                                </li>
+                            )
+                        return <></>;
+                    }) : <></>}
+                </ul>
+                <div className="chat-input-section">
+                    <form onSubmit={this.fetchChatResponse}>
+                        <input
+                            type="text"
+                            value={this.state.prompt}
+                            onChange={(e) => this.setState({ prompt: e.target.value })}
+                            placeholder="Seems like you're curious about Yumo..." required
+                        />
+                        <input type="submit" value="Send" />
+                    </form>
+                </div>
+            </Container>
+        );
     }
+    
 }
+
+
 
 export default AskAI;

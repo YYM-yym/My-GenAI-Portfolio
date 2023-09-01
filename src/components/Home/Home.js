@@ -1,24 +1,10 @@
-import React, { useState } from "react";  // <-- Import useState
+import React from "react";  // <-- Import useState
 import { Container, Row, Col } from "react-bootstrap";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import Type from "./Type";
 import "./home.css";
-import { useEffect } from "react";
 
 function Home() {
-  const [inputValue, setInputValue] = useState("");
-
-  useEffect(() => {
-    fetch('/getinput').then(
-      res => res.json()
-      ).then(
-        inputValue => {
-          setInputValue(inputValue)
-          console.log(inputValue)
-        }
-      )
-  }, [])
-
 
 
   return (
@@ -45,16 +31,6 @@ function Home() {
               </div>
             </Col>
 
-              {/* Add this section for the search box */}
-              <div className="search-box-wrapper">
-                <input 
-                  type="text" 
-                  value={inputValue} 
-                  onChange={(e) => setInputValue(e.target.value)} 
-                  placeholder="Ask anything about Yumo..."
-                />
-                <button onClick={setInputValue}>Ask</button>
-              </div>
 
           </Row>
         </Container>
