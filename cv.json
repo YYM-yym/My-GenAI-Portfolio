@@ -1,0 +1,136 @@
+{
+    "name": "YUMO YAO",
+    "contact": {
+      "phone": "88842269",
+      "email": "yumo.yao@u.nus.edu",
+      "location": "Singapore"
+    },
+    "education": [
+      {
+        "institution": "National University of Singapore",
+        "location": "Singapore",
+        "degree": "M.S. in Business Analytics",
+        "date": "Expected: September 2023",
+        "details": ["CAP: 4.5/5"]
+      },
+      {
+        "institution": "New York University",
+        "location": "Shanghai, China",
+        "degree": "B.S. in Data Science and Business and Finance (Business Analytics Track)",
+        "date": "August 2018 – May 2022",
+        "details": ["Dean’s List 2021 – 2022", "CGPA: 3.5/4"]
+      }
+    ],
+    "work_experience": [
+      {
+        "company": "SAP",
+        "location": "Singapore",
+        "position": "AI Engineer Intern",
+        "date": "May 2023 – Now",
+        "tasks": [
+          "Developed knowledge graphs (Neo4j, TigerGraph, Memgraph) of 407,000 nodes with contract data retrieved from OpenSearch using ElasticSearch and DSL queries, reducing 100+ changes per update",
+          "Extracted keywords using LLM and prompt engineering from 190 contracts, implemented association rules mining for 19 keywords with Python Apriori and GSQL queries, enabling similar keyword searching for business",
+          "Developed a contract analysis function utilizing RegEx and SpaCy to locate and LangChain to extract relevant information, subsequently enhancing its performance and functionality through prompt engineering"
+        ]
+      },
+      {
+        "company": "ParkRoyal on Beach Road",
+        "location": "Singapore",
+        "position": "Data Analyst",
+        "date": "December 2022 – Feburary 2023",
+        "tasks": [
+         "Created auto-updated occupancy reports and visualizations from raw reservation records, utilizing Python hvplot library for dynamic plots including calendar views, reducing 30+ mins per update while achieving 98% accuracy",
+         "Processed and analyzed a time-series dataset of 600,000+ flight records; developed a categorization framework based on lead time and flight class, yielding insights into customer price sensitivity and decision-making"
+        ]
+      },
+      {
+        "company": "Shanghai Disney Resort",
+        "location": "Shanghai, China",
+        "position": "Intern, Revenue Management & Analytics",
+        "date": "May 2021 – August 2021",
+        "tasks": [
+         "Developed revenue prediction model with Python and achieved 90% accuracy; collaborated with cross-functional teams to refine the restaurant pricing strategies based on predictions, increasing the revenue by 15%",
+         "Wrote SQL queries to extract data from databases and developed a spreadsheet that integrated SQL queries to automate the data extraction, transformation, and loading process, reducing workflow time by 40%",
+         "Created 4 monthly Tableau dashboards to track resort performance, uncovered customer consumption habits by visualizing customer behavior over timeline to support business decisions"
+        ]
+      },
+      {
+        "company": "Sinolink Investment Services Co., Ltd.",
+        "location": "Shanghai, China",
+        "position": "Data Analyst Intern",
+        "date": "May 2020 – Aug 2020",
+        "tasks": [
+         "Maintained and monitored financial products database and wrote SQL queries to support business operations",
+         "Applied linear regression models to over 1,000 financial products to identify categorization anomalies",
+         "Calculated depreciation and amortization of the company's fixed assets using pivot tables"
+        ]
+      }
+    ],
+    "projects": [
+        {
+          "title": "Paymo – E-wallet for Safe Transaction Empowered by Blockchain",
+          "date": "May 2023 – April 2023",
+          "details": [
+            "Conducted market research and competitor analysis on 3 payment applications and 3 banks in SEA",
+            "Designed an e-wallet app, Paymo, integrating blockchain-based user verification, incorporating deep learning models to detect transaction anomalies, resulting in increased user trust and reduced fraudulent activities"
+          ]
+        },
+        {
+          "title": "Neural Multi-task Learning for Disaster Detection and Sentiment Classification",
+          "date": "May 2023 – April 2023",
+          "details": [
+            "Combined and preprocessed two datasets (28k sentiment, 8k disaster entries) using NLTK, visualized with word clouds, and prepared for model training with tokenization, padding, and generating attention masks",
+            "Built a Neural Network with embedding, LSTM, dropout, and fully connected layers, trained on a combined dataset with weighted loss of 2 tasks, fine-tuned the weight using ax-platform, achieving an F1 score of 0.77"
+          ]
+        },
+        {
+          "title": "Explainable AI Analysis on Employee Attrition",
+          "date": "March 2023 – April 2023",
+          "details": [
+            "Processed dataset of 1.5k entries; developed Random Forest and XGBoost models, achieving an F1 score of 0.88",
+            "Applied XAI tools like Permutation Feature Importance, Partial Dependence Plots, SHAP, LIME, and Counterfactual Explanations for model interpretation, refining feature selection and achieving 0.9 F1 Score"
+          ]
+        },
+        {
+          "title": "Operations Research Analytics on Traveling Salesman Problem",
+          "date": "October 2022 – November 2022",
+          "details": [
+            "Developed a fixed-driver and a multi-driver delivery model with corresponding constraints, minimizing travel distance and optimizing driver count",
+            "Solved the model with Python Gurobi package with model variables, objectives, and constraints"
+          ]
+        },
+        {
+          "title": "Impact of Volcker Rule on Banks: A Statistical Analysis",
+          "date": "October 2022 – November 2022",
+          "details": [
+            "Preprocessed an 81,560-entry bank dataset, handling missing values, segregating treatment and control groups",
+            "Applied propensity score matching using Python, creating balanced comparison groups to control baseline bias",
+            "Built an OLS regression model to execute a Difference-in-Difference analysis, observed R-square for the impact"
+          ]
+        },
+        {
+          "title": "Customer Retention at HSBC | New York University Capstone Project",
+          "date": "January 2022 – May 2022",
+          "details": [
+            "Preprocessed and visualized 11 datasets totalling 20k entries using Python to identify customer behavior pattern",
+            "Applied machine learning models to predict customer churn with 96% accuracy by hyperparameter tuning and cross-validation, formulating a profile of high-risk churn customers for HSBC"
+          ]
+        },
+        {
+          "title": "Online Air Ticket Reservation System",
+          "date": "Mar 2021 – May 2021",
+          "details": [
+            "Designed the entity-relationship (E-R) diagram for the database and developed a relational MySQL database",
+            "Developed a front-end airline ticket booking system using JavaScript and HTML, integrating it with a back-end database via Python's PyMySQL package"
+          ]
+        }
+      ],
+    "skills": {
+      "languages": ["English", "Mandarin Chinese"],
+      "programming_languages": ["Python", "R", "SQL", "GSQL", "Cypher (Neo4j)", "JavaScript", "CSS", "HTML"],
+      "tools": ["Git", "Docker", "Excel (Pivot Table, Vlookup)", "PowerBI", "Tableau", "Minitab"],
+      "libraries": ["Pandas", "NumPy", "Scikit-learn", "Keras", "Tensorflow", "Pytorch", "NLTK", "SpaCy", "Gurobi", "LangChain", "React.js"],
+      "soft_skills": ["Communication", "Teamwork", "Time Management", "Analytical Thinking"]
+    }
+  }
+  

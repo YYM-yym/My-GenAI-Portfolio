@@ -1,0 +1,47 @@
+/* askai.css */
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.chat-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.chat-messages {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.user-message, .ai-message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+.user-message {
+    background-color: #f5f5f5;
+    align-self: flex-end;
+}
+
+.ai-message {
+    background-color: #e0f7fa;
+}
+
+
+.chat-input-section {
+    display: flex;
+    gap: 10px;
+    background-color: #e0e0e0;  /* To help visualize the section */
+    padding: 10px;
+}
+.chat-input-section input {
+    flex: 1;
+}
+

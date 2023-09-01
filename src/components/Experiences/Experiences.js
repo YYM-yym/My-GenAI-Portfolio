@@ -49,20 +49,17 @@ function Experiences() {
                 <Col md={8}>
                     <div className="timeline">
                         {experiencesData.map((exp, idx) => (
-                            <div key={exp.company} className={`experience-block ${idx % 2 === 0 ? 'left' : 'right'}`}>
-                                {idx !== 0 && <div className="timeline-line"></div>}
-                                <h3 className="experience-position">{exp.position}</h3>
-                                <h4 className="experience-company">{exp.company} </h4>
-                                <p className="experience-summary">{exp.summary}</p>
+                            <div key={exp.company} className="experience-container">
+                                <div className={`experience-block ${idx % 2 === 0 ? 'left' : 'right'}`}>
+                                    <h3 className="experience-position">{exp.position}</h3>
+                                    <h4 className="experience-company">{exp.company} </h4>
+                                    <p className="experience-summary">{exp.summary}</p>
+                                </div>
+                                <div className={`exp-info ${idx % 2 !== 0 ? 'right' : 'left'}`}>
+                                    <p className='experience-period'>{exp.period}</p>
+                                    <p className="experience-location">{exp.location}</p>
+                                </div>
                             </div>
-                        ))}
-                    {experiencesData.map((exp, idx) => (
-                            <div className="exp-info ${idx % 2 === 0 ? 'right' : 'left'}`">
-                                {idx !== 0 && <div className="timeline-line"></div>}
-                                <p className='experience-period'>{exp.period}</p>
-                                <p className="experience-location">{exp.location}</p>
-                            </div>
-
                         ))}
                     </div>
                 </Col>
