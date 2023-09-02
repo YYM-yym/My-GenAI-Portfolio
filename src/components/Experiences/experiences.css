@@ -1,143 +1,149 @@
-
 .experiences-section {
-    background-color: var(--clr-bg);
-    padding: 50px 0;
+  background-color: var(--clr-bg);
+  padding: 50px 0;
 }
 
 .experience-title {
-    font-size: 2.1em;
-    margin-bottom: 20px;
-    position: relative;
+  font-size: 2.1em;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 .primary-header {
-    color: var(--clr-primary);
+  color: var(--clr-primary);
 }
 /* The previously provided global and experiences-section styles remain unchanged */
 
 .timeline {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .experience-container {
-    display: flex;
-    width: 100%;
-    position: relative;
-    margin-bottom: 40px;
-    align-items: center;
+  display: flex;
+
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.experience-container.right {
+  flex-direction: row-reverse;
+}
+.experience-container:nth-child(2n) {
+  margin-bottom: 300px;
 }
 
 .experience-block {
-    flex: 1;
-    padding: 20px;
-    background: var(--clr-bg);
-    box-shadow: var(--shadow);
-    color: var(--clr-txt);
-    border-radius: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* flex: 1; */
+  padding: 20px;
+  background: var(--clr-bg);
+  box-shadow: var(--shadow);
+  color: var(--clr-txt);
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-block:hover {
-    transform: scale(1.05);
-    box-shadow: var(--shadow) 0px 5px 25px 0px;
+  transform: scale(1.05);
+  box-shadow: var(--shadow) 0px 5px 25px 0px;
 }
 
 .experience-block.left,
 .experience-block.right {
-    width: 40%;
+  width: 40%;
 }
 
 .experience-block.left {
-    margin-right: 60%;
+  /* margin-right: 60%; */
 }
 
 .experience-block.right {
-    margin-left: 60%;
+  /* margin-left: 60%; */
 }
 
 .experience-position {
-    font-size: 24px;
-    color: var(--clr-primary);
-    margin-bottom: 10px;
+  font-size: 24px;
+  color: var(--clr-primary);
+  margin-bottom: 10px;
 }
 
 .experience-company {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .experience-summary {
-    font-size: 16px;
-    margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
 .exp-info {
-    flex: 1;
-    padding: 20px;
-    background: var(--clr-bg);
-    box-shadow: var(--shadow);
-    color: var(--clr-txt);
-    border-radius: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* flex: 1; */
+  padding: 20px;
+  background: var(--clr-bg);
+  box-shadow: var(--shadow);
+  color: var(--clr-txt);
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .exp-info:hover {
-    transform: scale(1.05);
-    box-shadow: var(--shadow) 0px 5px 25px 0px;
+  transform: scale(1.05);
+  box-shadow: var(--shadow) 0px 5px 25px 0px;
 }
 
 .exp-info.left,
 .exp-info.right {
-    width: 40%;
+  width: 40%;
 }
 
 .exp-info.left {
-    margin-right: 60%;
+  /* margin-right: 60%; */
 }
 
 .exp-info.right {
-    margin-left: 60%;
+  /* margin-left: 60%; */
 }
 .experience-period,
 .experience-location {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .timeline:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 3px;
-    background-color: var(--clr-primary);
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background-color: var(--clr-primary);
+  z-index: 0;
 }
 
 @media (max-width: 767px) {
-    .experience-container {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-    }
+  .experience-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 
-    .experience-block.left,
-    .experience-block.right {
-        width: 100%;
-        margin: 0;
-    }
+  .experience-block.left,
+  .experience-block.right {
+    width: 100%;
+    margin: 0;
+  }
 
-
-    .exp-info {
-        position: relative;
-        transform: none;
-        top: 0;
-        margin-top: 15px;
-        width: 100%;
-        text-align: left;
-    }
+  .exp-info {
+    position: relative;
+    transform: none;
+    top: 0;
+    margin-top: 15px;
+    width: 100%;
+    text-align: left;
+  }
 }

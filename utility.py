@@ -5,8 +5,7 @@ import openai
 
 # _ = load_dotenv(find_dotenv())
 
-openai.api_key = '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'
-# openai.api_key = os.getenv('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')
+openai.api_key = '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'
 
 
 ## Helper function

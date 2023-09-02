@@ -72,11 +72,12 @@ class AskAI extends React.Component {
                         else if (role === 'assistant')
                             return (
                                 <li className="ai-message" key={idx}>
-                                    <input 
+                                {dialogue}
+                                    {/* <input 
                                         type="text" 
                                         value={`Yumo: ${dialogue}`} 
                                         readOnly 
-                                    />
+                                    /> */}
                                 </li>
                             )
                         return <></>;
