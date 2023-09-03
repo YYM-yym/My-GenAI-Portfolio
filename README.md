@@ -16,6 +16,7 @@
 
 ## Installation
 Run in the project directory for the backend: `poetry run python server1.py`
+
 Run in the project directory for the frontend: `npm install`, `npm start`
 
 
