@@ -108,3 +108,8 @@ input[type="submit"]:hover {
     box-shadow: var(--shadow);
 }
 
+.chat-messages {
+    max-height: 70vh; /* Adjust this value as per your requirement */
+    overflow-y: auto;
+}
+

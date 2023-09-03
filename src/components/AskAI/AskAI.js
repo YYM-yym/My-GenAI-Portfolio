@@ -36,19 +36,25 @@ class AskAI extends React.Component {
     fetchChatResponse = (event) => {
         event.preventDefault();
         const prompt = this.state.prompt;
-        let objContext = {...this.state.context};
-        let context = objContext.context;
-        
+        let context = this.state.context.context || [];
+    
         axios.post('http://127.0.0.1:5000/askai', {
             prompt: prompt,
             context: context,
         }).then((response) =>{
+            const newContext = response?.data?.context || [];
+    
+            // Only append the new server response to the existing context
+            context = context.concat(newContext);
+    
             this.setState({
-                context: response?.data,
+                context: { context: context },
                 prompt: ""
             })
         }).catch(error => console.log(error));
     }
+    
+    
 
     componentDidMount() {
         axios.get('http://127.0.0.1:5000/askai').then(response => {

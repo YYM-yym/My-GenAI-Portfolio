@@ -68,7 +68,7 @@ function Experiences() {
                   <p className="experience-summary">{exp.summary}</p>
                 </div>
 
-                <div className={`exp-info ${idx % 2 !== 0 ? "right" : "left"}`}>
+                <div className={`exp-info ${idx % 2 === 0 ? "right" : "left"}`}>
                   <p className="experience-period">{exp.period}</p>
                   <p className="experience-location">{exp.location}</p>
                 </div>
