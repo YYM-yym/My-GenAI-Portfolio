@@ -16,7 +16,7 @@ class yumoyaoqa:
             model="text-davinci-003",
             temperature=0,
             max_tokens=1024,
-            openai_api_key="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"
+            openai_api_key="your-api-key"
         )
 
         # Load and split text from JSON
